@@ -1,0 +1,63 @@
+package com.example.autoscroller
+
+import com.example.autoscroller.ui.setup.SetupActivity
+import com.example.autoscroller.util.Permissions
+import android.os.Build
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.provider.Settings
+import androidx.appcompat.app.AppCompatActivity
+import com.example.autoscroller.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+     package com.example.autoscroller
+
+import com.example.autoscroller.ui.setup.SetupActivity
+import com.example.autoscroller.util.Permissions
+import android.os.Build
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.provider.Settings
+import androidx.appcompat.app.AppCompatActivity
+import com.example.autoscroller.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnStart.setOnClickListener {
+            if (!Settings.canDrawOverlays(this)) {
+                val i = Intent(
+                    Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:$packageName")
+                )
+                startActivity(i)
+            } else {
+                startService(Intent(this, OverlayIndicatorService::class.java))
+            }
+        }
+    }
+}
+.Value + "`r`n" + $checkBlock + "`r`n" super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnStart.setOnClickListener {
+            if (!Settings.canDrawOverlays(this)) {
+                val i = Intent(
+                    Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:$packageName")
+                )
+                startActivity(i)
+            } else {
+                startService(Intent(this, OverlayIndicatorService::class.java))
+            }
+        }
+    }
+}

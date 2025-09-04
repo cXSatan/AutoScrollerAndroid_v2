@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoScroller</string>
+    <string name="setup_title">AutoScroller &#8226; Setup</string>
+    <string name="service_description">Enables automated scrolling and overlay controls.</string>
+</resources>

@@ -1,0 +1,17 @@
+﻿# Android/Gradle
+/.gradle/
+/.idea/
+/local.properties
+/.cxx/
+/captures/
+/build/
+/app/build/
+/*.iml
+
+# Keystores (don’t commit real ones)
+*.jks
+*.keystore
+
+# OS cruft
+.DS_Store
+Thumbs.db

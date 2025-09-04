@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">
+        Auto-scrolls the foreground app by performing periodic swipe gestures.
+    </string>
+</resources>
